@@ -1,0 +1,30 @@
+.footer { background: #000; color: var(--white); margin-top: 0; padding: 40px 20px; }
+
+.footer > .container { max-width: 1200px; padding-right: 0; padding-left: 0; }
+
+.footer__columns { display: flex; justify-content: space-between; gap: 48px; }
+
+.footer__brand { display: flex; min-width: 260px; flex-direction: column; gap: 20px; }
+.footer__brand img { width: 185px; height: auto; }
+.footer__brand img[alt="Digital Store"] { max-width: 100%; height: auto; }
+.footer__brand p { max-width: 300px; color: #aaa; font-size: 14px; line-height: 1.5; }
+.footer__socials { display: flex; gap: 10px; margin-top: -2px; }
+.footer__socials img { width: 33px; height: 33px; }
+
+.info-group { min-width: 150px; }
+.info-group h4 { font-size: 14px; font-weight: 700; margin-bottom: 20px; color: var(--white); }
+.info-group ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.info-group a { color: var(--white); font-size: 13px; text-decoration: none; line-height: 1.5; }
+.info-group a:hover { text-decoration: underline; }
+
+.footer hr { border: 0; border-top: 1px solid #444; margin: 28px 0 16px; }
+.footer__copy { text-align: center; font-size: 11px; color: var(--white); }
+
+@media (max-width: 900px) {
+	.footer__columns { display: grid; grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 560px) {
+	.footer__columns { grid-template-columns: 1fr; }
+	.footer__brand { min-width: 0; }
+}

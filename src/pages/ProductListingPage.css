@@ -1,0 +1,22 @@
+.listing-page { display: flex; gap: 40px; align-items: flex-start; padding-top: 40px; }
+.listing-page__sidebar { width: 308px; flex-shrink: 0; display: flex; flex-direction: column; gap: 24px; }
+
+.listing-page__sort { display: flex; flex-direction: column; gap: 8px; font-size: 16px; color: var(--dark-gray-2); }
+.listing-page__sort select {
+  width: 308px; max-width: 100%; height: 60px; padding: 0 16px;
+  font: inherit; font-size: 16px; color: var(--dark-gray-2);
+  background: var(--white); border: 1px solid var(--light-gray-2); border-radius: 4px;
+}
+
+.listing-page__filters { background: var(--white); width: 308px; max-width: 100%; padding: 24px 24px 16px; border-radius: 4px; }
+.listing-page__filters h3 { font-size: 16px; font-weight: 700; color: var(--dark-gray-2); }
+.listing-page__filters hr { border: 0; border-top: 1px solid var(--light-gray-2); margin: 12px 0 0; }
+
+.listing-page__results { flex: 1; min-width: 0; }
+.listing-page__results .section { margin-top: 0; }
+.listing-page .catalog-notice { margin-top: -8px; }
+
+@media (max-width: 1100px) {
+  .listing-page { flex-direction: column; }
+  .listing-page__sidebar { width: 100%; }
+}
