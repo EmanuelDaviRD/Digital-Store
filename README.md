@@ -1,4 +1,4 @@
-# Drip Store
+# Digital Store
 
 # projeto_Digital-Store_1
 
